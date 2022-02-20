@@ -3,7 +3,6 @@ from rest_framework import routers
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from .views import (ProjectsViewSet,
-                    UserViewSet,
                     CommentsViewSet,
                     ContributorsViewSet,
                     IssuesViewSet, RegisterUsers,

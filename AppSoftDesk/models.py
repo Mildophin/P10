@@ -9,14 +9,15 @@ class Projects(models.Model):
     """
 
     TYPE_CHOICES = [
-        ('Web', 'Web'),
+        ('Front end', 'Front end'),
+        ('Back end', 'Back end'),
         ('iOS', 'iOS'),
         ('Android', 'Android')
     ]
 
     title = models.CharField(max_length=150)
     description = models.CharField(max_length=150)
-    type = models.CharField(max_length=7, choices=TYPE_CHOICES, default='Web')
+    type = models.CharField(max_length=10, choices=TYPE_CHOICES, default='Front End')
     author_user_id = models.ForeignKey(to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE, blank=True, null=True)
 
     class Meta:
