@@ -35,9 +35,9 @@ class Contributors(models.Model):
     ]
 
     role_list = [
-        ("author", "Auteur"),
-        ("responsable", "Responsable"),
-        ("Contributor", "Contributeur"),
+        ("Auteur", "Auteur"),
+        ("Responsable", "Responsable"),
+        ("Contributeur", "Contributeur"),
     ]
 
     user_id = models.ForeignKey(to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE, blank=True, null=True)
@@ -58,12 +58,13 @@ class Issues(models.Model):
                    ('Amelioration', 'Amelioration'),
                    ('Tâche', 'Tâche')
                    ]
-    PRIORITY_CHOICES = [('Low', 'Faible'),
-                        ('Middle', 'Moyenne'),
-                        ('High', 'Elevée')
+    PRIORITY_CHOICES = [('Faible', 'Faible'),
+                        ('Moyenne', 'Moyenne'),
+                        ('Elevée', 'Elevée')
                         ]
-    STATUS_CHOICES = [('En cours', 'En cours'),
-                      ('Terminée', 'Terminée')
+    STATUS_CHOICES = [('A faire', 'A faire'),
+                      ('En cours', 'En cours'),
+                      ('Terminé', 'Terminé')
                       ]
 
     title = models.CharField(max_length=150)
