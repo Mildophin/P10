@@ -25,7 +25,7 @@ $ source env/bin/activate
 $ pip3 install -r requirements.txt    
 ```
 
-## Lancement du serveur Django##
+## Lancement du serveur Django
 
 * Se rendre dans le répertoire contenant le fichier python ' manage.py ' ( dossier P10 )
 * Puis exécuter:
