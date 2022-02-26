@@ -6,7 +6,7 @@ Ce programme est une API REST framework sous django réalisé dans le cadre d'un
 
 ## Installation
 
-Se diriger sur le repertoire où l'on souhaite installer l'application.
+Se diriger sur le répertoire où l'on souhaite installer l'application.
 
 Pour installer le programme via un terminal :  
 
@@ -25,16 +25,16 @@ $ source env/bin/activate
 $ pip3 install -r requirements.txt    
 ```
 
-##Lancement du serveur Django##
+## Lancement du serveur Django##
 
-* Se rendre dans le repertoire contenant le fichier python ' manage.py ' ( dossier P10 )
+* Se rendre dans le répertoire contenant le fichier python ' manage.py ' ( dossier P10 )
 * Puis exécuter:
 ```python manage.py runserver```
 * La page sera accessible à l'URL suivante:  http://127.0.0.1:8000/projects/
 
 ## Fonctionnement
 
-* Se referer à la documentation POSTMAN pour effectuer les tests:
+Se référer à la documentation POSTMAN pour effectuer les tests:
 https://documenter.getpostman.com/view/14877827/UVkqqZyc
 
 
